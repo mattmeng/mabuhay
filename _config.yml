@@ -7,7 +7,7 @@ title:            Mabuhay
 tagline:          The Ruby GUI Framework
 url:              http://mattmeng.github.io/mabuhay
 paginate:         1
-baseurl:          /
+baseurl:          /mabuhay/
 author:
   name:           Matt Meng
   url:            http://mattmeng.github.io/
