@@ -1,88 +1,37 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Mabuhay by mattmeng</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+---
+layout: default
+---
 
-  </head>
-  <body>
+<div class="posts">
+  {% for post in paginator.posts %}
+  <div class="post">
+    <h1>
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+    </h1>
 
-      <header>
-        <h1>Mabuhay</h1>
-        <p>A Ruby GUI framework designed to leverage web technologies without the need to write anything but Ruby.</p>
-      </header>
+    <span class="post-date">{{ post.date | date_to_string }}</span>
 
-      <div id="banner">
-        <span id="logo"></span>
+    {{ post.content }}
+  </div>
+  {% endfor %}
+</div>
 
-        <a href="https://github.com/mattmeng/mabuhay" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/mattmeng/mabuhay/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/mattmeng/mabuhay/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
-
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <h1>
-<a id="mabuhay" class="anchor" href="#mabuhay" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mabuhay</h1>
-
-<p>A Ruby GUI framework designed to leverage web technologies without the need to write anything but Ruby.</p>
-
-<h2>
-<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
-
-<p>Add this line to your application's Gemfile:</p>
-
-<div class="highlight highlight-ruby"><pre><span class="pl-k">gem</span> <span class="pl-s1"><span class="pl-pds">'</span>mabuhay<span class="pl-pds">'</span></span></pre></div>
-
-<p>And then execute:</p>
-
-<pre><code>$ bundle
-</code></pre>
-
-<p>Or install it yourself as:</p>
-
-<pre><code>$ gem install mabuhay
-</code></pre>
-
-<h2>
-<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
-
-<p>TODO: Write usage instructions here</p>
-
-<h2>
-<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h2>
-
-<ol>
-<li>Fork it ( <a href="https://github.com/mattmeng/mabuhay/fork">https://github.com/mattmeng/mabuhay/fork</a> )</li>
-<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
-<li>Commit your changes (<code>git commit -am 'Add some feature'</code>)</li>
-<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
-<li>Create a new Pull Request</li>
-</ol>
-      </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/mattmeng">mattmeng</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
-      </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
-</html>
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a href="/page{{paginator.next_page}}" class="older">Older</a>
+  {% else %}
+    <span class="next">Older</span>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.page == 2 %}
+      <a href="/" class="newer">Newer</a>
+    {% else %}
+      <a href="/page{{paginator.previous_page}}" class="newer">Newer</a>
+    {% endif %}
+  {% else %}
+    <span class="previous">Newer</span>
+  {% endif %}
+</div>

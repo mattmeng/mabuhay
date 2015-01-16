@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Mabuhay</title>
+ <link href="http://mattmeng.github.io/mabuhay/atom.xml" rel="self"/>
+ <link href="http://mattmeng.github.io/mabuhay/"/>
+ <updated>2015-01-15T22:52:51-07:00</updated>
+ <id>http://mattmeng.github.io/mabuhay</id>
+ <author>
+   <name>Matt Meng</name>
+   <email>mengmatt@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>Mabuhay</title>
+   <link href="http://mattmeng.github.io/mabuhay/2015/01/15/mabuhay/"/>
+   <updated>2015-01-15T00:00:00-07:00</updated>
+   <id>http://mattmeng.github.io/mabuhay/2015/01/15/mabuhay</id>
+   <content type="html">&lt;p&gt;A Ruby GUI framework designed to leverage web technologies without the need to write anything but Ruby.&lt;/p&gt;
+
+&lt;h2&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;Add this line to your application&amp;#39;s Gemfile:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;gem install mabuhay
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And then execute:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bundle
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Or install it yourself as:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;gem install mabuhay
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h2&gt;Usage&lt;/h2&gt;
+
+&lt;p&gt;TODO: Write usage instructions here&lt;/p&gt;
+
+&lt;h2&gt;Contributing&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Fork it ( &lt;a href=&quot;https://github.com/mattmeng/mabuhay/fork&quot;&gt;https://github.com/mattmeng/mabuhay/fork&lt;/a&gt; )&lt;/li&gt;
+&lt;li&gt;Create your feature branch (&lt;code&gt;git checkout -b my-new-feature&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Commit your changes (&lt;code&gt;git commit -am &amp;#39;Add some feature&amp;#39;&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Push to the branch (&lt;code&gt;git push origin my-new-feature&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Create a new Pull Request&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+
+</feed>

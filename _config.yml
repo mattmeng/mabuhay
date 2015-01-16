@@ -1,0 +1,12 @@
+title:        Mabuhay
+tagline:      'Mabuhay, a Ruby GUI Framework'
+description:  A Ruby GUI framework designed to leverage web technologies without the need to write anything but Ruby.
+url:          http://mattmeng.github.io/mabuhay
+version:      0.0
+author:
+  name:       'Matt Meng'
+  email:      'mengmatt@gmail.com'
+markdown:     redcarpet
+permalink:    pretty
+pygments:     true
+paginate:     5
